@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+::selection {
+  background-color: rgba(0, 0, 0, 0.267);
+}
+body {
+  background-color: darkslateblue;
+  padding: 0 15px;
+}
+
+form {
+  max-width: 700px;
+  width: 100%;
+  min-height: 200px;
+  margin: 44px auto;
+  background-color: rgba(255, 255, 255, 0.212);
+  display: grid;
+  border-radius: 5px;
+
+  h1 {
+    margin: auto;
+    color: white;
+  }
+
+  input {
+    width: calc(100% - 100px);
+    height: 30px;
+    margin: auto;
+    outline: none;
+    padding: 10px;
+    border: 3px solid;
+    border-top-color: black;
+    border-left-color: black;
+    border-bottom-color: rgb(153, 144, 144);
+    border-right-color: rgb(153, 144, 144);
+    border-radius: 5px;
+  }
+
+  button {
+    //   transition: 0.5s;
+    font-weight: bold;
+    border-radius: 0 0 5px 5px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.671);
+
+    &:active {
+      background-color: white;
+      color: darkslateblue;
+    }
+  }
+}
+
+.box {
+  max-width: 700px;
+  width: 100%;
+  min-height: auto;
+  margin: 44px auto;
+  display: grid;
+  border-radius: 5px;
+
+  .box_item {
+    text-transform: capitalize;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 8px;
+    background-color: rgba(255, 255, 255, 0.616);
+    border-radius: 8px;
+    padding: 10px;
+
+    .lName,
+    .fName {
+      color: darkslateblue;
+    }
+
+    .UpDe {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+
+      button {
+        padding: 5px;
+        border: none;
+        outline: none;
+        background-color: darkslateblue;
+        color: white;
+        font-weight: bold;
+        border-radius: 3px;
+
+        &:active {
+          background-color: white;
+          color: darkslateblue;
+        }
+      }
+    }
+  }
+}

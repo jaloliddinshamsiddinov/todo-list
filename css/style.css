@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+::-moz-selection {
+  background-color: rgba(0, 0, 0, 0.267);
+}
+
+::selection {
+  background-color: rgba(0, 0, 0, 0.267);
+}
+
+body {
+  background-color: darkslateblue;
+  padding: 0 15px;
+}
+
+form {
+  max-width: 700px;
+  width: 100%;
+  min-height: 200px;
+  margin: 44px auto;
+  background-color: rgba(255, 255, 255, 0.212);
+  display: grid;
+  border-radius: 5px;
+}
+form h1 {
+  margin: auto;
+  color: white;
+}
+form input {
+  width: calc(100% - 100px);
+  height: 30px;
+  margin: auto;
+  outline: none;
+  padding: 10px;
+  border: 3px solid;
+  border-top-color: black;
+  border-left-color: black;
+  border-bottom-color: rgb(153, 144, 144);
+  border-right-color: rgb(153, 144, 144);
+  border-radius: 5px;
+}
+form button {
+  font-weight: bold;
+  border-radius: 0 0 5px 5px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.671);
+}
+form button:active {
+  background-color: white;
+  color: darkslateblue;
+}
+
+.box {
+  max-width: 700px;
+  width: 100%;
+  min-height: auto;
+  margin: 44px auto;
+  display: grid;
+  border-radius: 5px;
+}
+.box .box_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  margin-bottom: 8px;
+  background-color: rgba(255, 255, 255, 0.616);
+  border-radius: 8px;
+  padding: 10px;
+}
+.box .box_item .lName,
+.box .box_item .fName {
+  color: darkslateblue;
+}
+.box .box_item .UpDe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.box .box_item .UpDe button {
+  padding: 5px;
+  border: none;
+  outline: none;
+  background-color: darkslateblue;
+  color: white;
+  font-weight: bold;
+  border-radius: 3px;
+}
+.box .box_item .UpDe button:active {
+  background-color: white;
+  color: darkslateblue;
+}/*# sourceMappingURL=style.css.map */
