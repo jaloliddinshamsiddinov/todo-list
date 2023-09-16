@@ -6,7 +6,6 @@ const editBtn = document.querySelector("#editBtn");
 
 let val = JSON.parse(localStorage.getItem("todo"));
 let arr = val ? val : [];
-console.log(arr);
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   let obj = {};
@@ -44,7 +43,6 @@ const dlete = (id) => {
   for (let i of arr) {
     if (i.id == id) {
       arr = arr.filter((obj) => obj.id !== id);
-      console.log(arr);
     }
   }
   localStorage.setItem("todo", JSON.stringify(arr));
@@ -78,7 +76,9 @@ const editF = () => {
       }
     }
   }
+  for (let i of inputs) {
+    i.value = "";
+  }
   localStorage.setItem("todo", JSON.stringify(arr));
   create();
-  console.log(id);
 };
